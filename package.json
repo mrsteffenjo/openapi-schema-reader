@@ -1,0 +1,27 @@
+{
+  "name": "openapi-schema-reader",
+  "version": "1.0.0",
+  "description": "Parse openapi schema definitions to write models to diagrams",
+  "main": "index.js",
+  "scripts": {
+    "test": "test node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsteffenjo/openapi-schema-reader.git"
+  },
+  "keywords": [
+    "openapi",
+    "schema",
+    "reader",
+    "plantuml",
+    "model",
+    "diagram"
+  ],
+  "author": "Steffen Jørgensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrsteffenjo/openapi-schema-reader/issues"
+  },
+  "homepage": "https://github.com/mrsteffenjo/openapi-schema-reader#readme"
+}
