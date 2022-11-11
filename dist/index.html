@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Open API Schema Reader</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script>
+        function test() {
+            console.log('Test');
+        }
+    </script>
+</head>
+
+<body>
+
+    <fieldset>
+        <ledgend>Schema location</ledgend>
+        <label for="baseUrl">Base url:</label>
+        <input type="text" id="baseUrl" name="baseUrl" value="https://raw.githubusercontent.com/tmforum-rand/schemas/master/" /><br /><br />
+        <label for="schema">Schema:</label>
+        <input type="text" id="schema" name="schema" value="Customer/Bill.schema.json" /><br /><br />
+        <label for="definitionId">Destination Id:</label>
+        <input type="text" id="definitionId" name="definitionId" value="#Bill" /><br /><br />
+        <input type="submit" id="go" value="Fetch" />
+    </fieldset>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
