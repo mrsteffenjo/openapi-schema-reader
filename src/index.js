@@ -35,7 +35,7 @@ async function resolv(acc, base, path, schema, id) {
     if (!acc.classes.some(c => c.name === item.name)) {
         acc.classes.push({
             name: item.name,
-            attributes: attributes.map(a => `  + ${a.name}: ${a.format?a.type+' ('+a.format+')':a.type}\n`)
+            attributes: attributes.map(a => `  + ${a.name}: ${a.format?a.type+' - '+a.format:a.type}\n`)
         });
     }
 
@@ -50,7 +50,7 @@ async function resolv(acc, base, path, schema, id) {
         const file = ref.substring(idx + 1);
         await resolv(acc, base, subpath, file, defIdPart)
 
-        acc.links.push(`"${item.name}" --> "${defIdPart}": ${l.name}\n`);
+        acc.links.push(`"${item.name}" --> "${defIdPart.substring(1)}": ${l.name}\n`);
     }
 
     return acc;
